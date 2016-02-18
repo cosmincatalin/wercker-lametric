@@ -1,0 +1,10 @@
+{
+    "name" : "cosminsanda/wercker-lametric",
+    "description" : "Wercker to LaMetric App Server",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require" : {
+        "php" : ">=5.5.0",
+        "guzzlehttp/guzzle": "6.1.1"
+    }
+}
