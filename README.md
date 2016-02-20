@@ -35,9 +35,21 @@ This is the desired state of your projects.
 
 #### A number of builds are failing
 
+Some of your projects have a build failures on the *master* branch.
+
+![Alt text](/screenshots/buildonly.gif?raw=true "Something bad on master")
+
 #### A number of deploys are failing
 
+Some of your builds could not be deployed.
+
+![Alt text](/screenshots/deployonly.gif?raw=true "too bad you can't deploy")
+
 #### A number of deploys and builds are failing
+
+This is the situation you do not want to find yourself in.
+
+![Alt text](/screenshots/buildanddeploy.gif?raw=true "Everything is breaking apart.")
 
 #### The app is not configured
 
@@ -48,7 +60,7 @@ You somehow missed the steps above. Look at the *How to set-up the app* section.
 
 #### Some unexpected error happened
 
-The server is not responding properly because of an error. There is probably nothing you can do about it. You'll just have to wait for it to get fixed.
+The server is not responding because of an error. There is probably nothing you can do about it. You'll just have to wait for it to get fixed. You can speed up the process if you submit an issue.
 
 ![Alt text](/screenshots/error.gif?raw=true "The green builds")
 
