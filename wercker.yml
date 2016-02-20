@@ -1,0 +1,12 @@
+box:
+    id: composer/composer
+    tag: latest
+
+build:
+    steps:
+        - leipert/composer-install@0.9.1
+
+deploy:
+    steps:
+        - nomkhonwaan/appengine-deploy@1.0.3:
+            token: $APP_ENGINE_TOKEN

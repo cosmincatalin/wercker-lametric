@@ -4,8 +4,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 try {
 
-    $username = trim(strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $_GET["username"])));
-    $token = trim(strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $_GET["token"])));
+    $username = trim(strtolower(preg_replace("/[^A-Za-z0-9\-]/", '', $_GET["username"])));
+    $token = trim(strtolower(preg_replace("/[^A-Za-z0-9]/", '', $_GET["token"])));
 
     if ( strlen($username) === 0 || strlen( $token) === 0 ) {
         $default = [
