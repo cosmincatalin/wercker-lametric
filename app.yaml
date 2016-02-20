@@ -2,6 +2,10 @@ application: wercker-to-lametric
 version: 1
 runtime: php55
 api_version: 1
+instance_class: F1
+automatic_scaling:
+  min_pending_latency: 10s
+  max_pending_latency: 15s
 
 handlers:
 
