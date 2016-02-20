@@ -1,12 +1,25 @@
 box:
-    id: composer/composer
-    tag: latest
+  id: cosmincatalin/phinx
+  username: $DOCKERHUB_ACCOUNT
+  password: $DOCKERHUB_PASSWORD
+  tag: latest
 
 build:
     steps:
-        - leipert/composer-install@0.9.1
+        - script:
+            name: install composer
+            code: |
+              curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+        - script:
+            name: run composer
+            code: |
+              composer update
 
 deploy:
     steps:
+        - script:
+            name: install python
+            code: |
+                apt-get install python -y
         - nomkhonwaan/appengine-deploy@1.0.3:
             token: $APP_ENGINE_TOKEN

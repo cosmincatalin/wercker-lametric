@@ -2,3 +2,8 @@ vendor/
 .idea
 composer.lock
 ENVIRONMENT
+_builds
+_cache
+_projects
+_steps
+_temp
