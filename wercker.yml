@@ -1,10 +1,9 @@
-box:
-  id: cosmincatalin/phinx
-  username: $DOCKERHUB_ACCOUNT
-  password: $DOCKERHUB_PASSWORD
-  tag: latest
-
 build:
+    box:
+      id: cosmincatalin/phinx
+      username: $DOCKERHUB_ACCOUNT
+      password: $DOCKERHUB_PASSWORD
+      tag: latest
     steps:
         - script:
             name: install composer
@@ -16,6 +15,11 @@ build:
               composer install
 
 deploy:
+    box:
+      id: cosmincatalin/phinx
+      username: $DOCKERHUB_ACCOUNT
+      password: $DOCKERHUB_PASSWORD
+      tag: latest
     steps:
         - script:
             name: install python
