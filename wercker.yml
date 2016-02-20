@@ -13,7 +13,7 @@ build:
         - script:
             name: run composer
             code: |
-              composer update
+              composer install
 
 deploy:
     steps:
