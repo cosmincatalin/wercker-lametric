@@ -35,7 +35,7 @@ This is the desired state of your projects.
 
 #### A number of builds are failing
 
-Some of your projects have a build failures on the *master* branch.
+Some of your projects have build failures on the *master* branch.
 
 ![Alt text](/screenshots/buildonly.gif?raw=true "Something bad on master")
 
