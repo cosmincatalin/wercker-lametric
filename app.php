@@ -37,14 +37,14 @@ try {
             foreach ( $builds as $build ) {
                 if ( $build["result"] !== "passed" ) {
                     $details = json_decode($client->request($method, $build["url"] . "?token=$token")->getBody(), true);
-                    array_push($frames, [ "index" => $frameNo++, "text" => $details["application"]["name"], "icon" => "i2514" ]);
+                    array_push($frames, [ "index" => $frameNo++, "text" => $details["application"]["name"] . " ", "icon" => "i2514" ]);
                     $buildsFailed++;
                 }
             }
             foreach ( $deploys as $deploy ) {
                 if ( $deploy["result"] !== "passed" ) {
                     $details = json_decode($client->request($method, $deploy["url"] . "?token=$token")->getBody(), true);
-                    array_push($frames, [ "index" => $frameNo++, "text" => $details["application"]["name"], "icon" => "i195" ]);
+                    array_push($frames, [ "index" => $frameNo++, "text" => $details["application"]["name"] . " ", "icon" => "i195" ]);
                     $deploysFailed++;
                 }
             }
