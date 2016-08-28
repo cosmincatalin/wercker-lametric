@@ -33,7 +33,7 @@ try {
             foreach ( $runs as $run ) {
                 if ( $run["result"] !== "passed" ) {
                     $details = json_decode($client->request($method, $run["url"] . "?token=$token")->getBody(), true);
-                    array_push($frames, [ "index" => $frameNo++, "text" => $details["application"]["name"] . " ", "icon" => "i2514" ]);
+                    array_push($frames, [ "index" => $frameNo++, "text" => $application["name"] . " ", "icon" => "i2514" ]);
                     $runsFailed++;
                 }
             }
