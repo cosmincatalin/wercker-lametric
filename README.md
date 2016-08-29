@@ -33,9 +33,9 @@ This is the desired state of your projects.
 
 ![Alt text](/screenshots/healthy.gif?raw=true "The green builds")
 
-#### A number of builds are failing
+#### A number of runs are failing
 
-Some of your projects have build failures on the *master* branch.
+Some of your projects have their last run failing on their *master* branch.
 
 ![Alt text](/screenshots/buildonly.gif?raw=true "Something bad on master")
 
