@@ -20,7 +20,7 @@ try {
 
         $client = new GuzzleHttp\Client();
 
-        $applications = json_decode($client->request($method, "$protocol://$domain/api/v3/applications/$username/?token=$token")->getBody(), true);
+        $applications = json_decode($client->request($method, "$protocol://$domain/api/v3/applications/$username/?limit=100&token=$token")->getBody(), true);
 
         $runsFailed = 0;
 
