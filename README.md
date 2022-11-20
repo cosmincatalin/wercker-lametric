@@ -1,3 +1,5 @@
+Wercker no longer exists, so this repository has been archived
+
 # Wercker to LaMetric
 
 ![Alt text](/screenshots/product.gif?raw=true "This how LaMetric looks")
